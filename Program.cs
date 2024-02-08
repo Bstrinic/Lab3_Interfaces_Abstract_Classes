@@ -18,6 +18,15 @@ namespace Lab3_Interfaces_Abstract_Classes
             //Adding abstract method Eat 
             public abstract void Eat();
         }
+
+        //Creating the Dog class to implament Animal
+        class Dog : Animal
+        {
+            public override void Eat()
+            {
+                Console.WriteLine("Dogs eat meat.");
+            }
+        }
         static void Main(string[] args)
         {
         }
