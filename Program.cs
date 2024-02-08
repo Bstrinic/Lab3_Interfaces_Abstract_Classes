@@ -41,6 +41,7 @@ namespace Lab3_Interfaces_Abstract_Classes
         static void Main(string[] args)
         {
             //Crerating the Dog object 
+            Dog dog = new Dog();
             Console.WriteLine("Please enter the dog's name: "); // Asking the user for their input 
             string dogName = Console.ReadLine(); // Reading the user input 
 
@@ -84,9 +85,6 @@ namespace Lab3_Interfaces_Abstract_Classes
             Console.WriteLine($"\nCat's color: {cat.Colour}");
             Console.WriteLine($"\nCat's age: {cat.Age}");
             cat.Eat();
-
-
-
         }
     }
 }
