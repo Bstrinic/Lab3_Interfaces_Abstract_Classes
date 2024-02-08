@@ -14,6 +14,9 @@ namespace Lab3_Interfaces_Abstract_Classes
             public string Name { get; set; }
             public string Colour { get; set; }
             public int Age { get; set; }
+
+            //Adding abstract method Eat 
+            public abstract void Eat();
         }
         static void Main(string[] args)
         {
