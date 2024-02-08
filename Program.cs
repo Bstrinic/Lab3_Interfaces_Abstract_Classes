@@ -36,8 +36,12 @@ namespace Lab3_Interfaces_Abstract_Classes
                 Console.WriteLine("Cats eat mice.");
             }
         }
+
         static void Main(string[] args)
         {
-        }
+            //Crerating the Dog object 
+            Console.WriteLine("Please enter the name of the Dog: "); // Asking the user for their input 
+            string dogName = Console.ReadLine(); // Reading the user input 
+        } 
     }
 }
