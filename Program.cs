@@ -65,7 +65,27 @@ namespace Lab3_Interfaces_Abstract_Classes
             //Creating the Cat Object 
             Console.WriteLine("Please enter the cat's name: ");
             string catName = Console.ReadLine();
-            
+            Cat cat = new Cat();
+            cat.Name = catName;
+
+            Console.WriteLine("Please enter the cat's color: ");
+            cat.Colour = Console.ReadLine();
+
+            Console.WriteLine("Enter the cat's age: ");
+            if (!int.TryParse(Console.ReadLine(), out int catAge))
+            {
+                Console.WriteLine("Invalid Input. Please try again!");
+                return;
+            }
+            cat.Age = catAge;
+
+            //Displaying the information provided for cat 
+            Console.WriteLine($"\nCat's name: {catName}");
+            Console.WriteLine($"\nCat's color: {cat.Colour}");
+            Console.WriteLine($"\nCat's age: {cat.Age}");
+            cat.Eat();
+
+
 
         }
     }
