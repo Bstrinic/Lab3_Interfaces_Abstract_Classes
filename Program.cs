@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Lab3_Interfaces_Abstract_Classes
 {
@@ -40,8 +41,20 @@ namespace Lab3_Interfaces_Abstract_Classes
         static void Main(string[] args)
         {
             //Crerating the Dog object 
-            Console.WriteLine("Please enter the name of the Dog: "); // Asking the user for their input 
+            Console.WriteLine("Please enter the dog's name: "); // Asking the user for their input 
             string dogName = Console.ReadLine(); // Reading the user input 
-        } 
+
+            Console.WriteLine("Please enter the dog's color: ");
+            string dogColor = Console.ReadLine();
+
+            Console.WriteLine("Please enter the dog's age: ");
+            //Created to display please try again if the user doesn't input an integer
+            if (!int.TryParse(Console.ReadLine(), out int dogAge)) 
+            {
+                Console.WriteLine("Invalid input. Please try again!");
+                return;
+            }
+
+        }
     }
 }
