@@ -58,9 +58,9 @@ namespace Lab3_Interfaces_Abstract_Classes
 
             dog.Age = dogAge;
             //Displaying the information provided for the dog 
-            Console.WriteLine($"Dog's name: {dogName}");
-            Console.WriteLine($"Dog's color: {dogColor}");
-            Console.WriteLine($"Dog's age: {dogAge}");
+            Console.WriteLine($"\nDog's name: {dogName}");
+            Console.WriteLine($"\nDog's color: {dogColor}");
+            Console.WriteLine($"\nDog's age: {dogAge}");
             dog.Eat();
 
             //Creating the Cat Object 
@@ -84,6 +84,8 @@ namespace Lab3_Interfaces_Abstract_Classes
             Console.WriteLine($"\nCat's name: {catName}");
             Console.WriteLine($"\nCat's color: {cat.Colour}");
             Console.WriteLine($"\nCat's age: {cat.Age}");
+            
+            Console.ReadLine();
             cat.Eat();
         }
     }
