@@ -20,7 +20,7 @@ namespace Lab3_Interfaces_Abstract_Classes
             public abstract void Eat();
         }
 
-        //Creating the Dog class to implament Animal
+        //Creating the Dog class to implement Animal
         class Dog : Animal
         {
             public override void Eat()
@@ -29,7 +29,7 @@ namespace Lab3_Interfaces_Abstract_Classes
             }
         }
 
-        //Creating the Cat class to implament Animal
+        //Creating the Cat class to implement Animal
         class Cat : Animal
         {
             public override void Eat() 
@@ -40,7 +40,7 @@ namespace Lab3_Interfaces_Abstract_Classes
 
         static void Main(string[] args)
         {
-            //Crerating the Dog object 
+            //Created the Dog object 
             Dog dog = new Dog();
             Console.WriteLine("Please enter the dog's name: "); // Asking the user for their input 
             string dogName = Console.ReadLine(); // Reading the user input 
