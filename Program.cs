@@ -27,6 +27,15 @@ namespace Lab3_Interfaces_Abstract_Classes
                 Console.WriteLine("Dogs eat meat.");
             }
         }
+
+        //Creating the Cat class to implament Animal
+        class Cat : Animal
+        {
+            public override void Eat() 
+            {
+                Console.WriteLine("Cats eat mice.");
+            }
+        }
         static void Main(string[] args)
         {
         }
