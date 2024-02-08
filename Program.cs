@@ -55,6 +55,13 @@ namespace Lab3_Interfaces_Abstract_Classes
                 return;
             }
 
+            dog.Age = dogAge;
+            //Displaying the information provided for the dog 
+            Console.WriteLine($"Dog's name: {dogName}");
+            Console.WriteLine($"Dog's color: {dogColor}");
+            Console.WriteLine($"Dog's age: {dogAge}");
+            
+
         }
     }
 }
