@@ -60,6 +60,11 @@ namespace Lab3_Interfaces_Abstract_Classes
             Console.WriteLine($"Dog's name: {dogName}");
             Console.WriteLine($"Dog's color: {dogColor}");
             Console.WriteLine($"Dog's age: {dogAge}");
+            dog.Eat();
+
+            //Creating the Cat Object 
+            Console.WriteLine("Please enter the cat's name: ");
+            string catName = Console.ReadLine();
             
 
         }
